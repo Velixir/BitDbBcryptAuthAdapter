@@ -14,16 +14,16 @@ Clone into `./vendor/`.
 
 1. Enable the module in your `application.config.php` file.
 
-    ```php
-    <?php
-    return array(
-        'modules' => array(
-            // ...
-            'BitDbBcryptAuthAdapter',
-        ),
-        // ...
-    );
-    ```
+```php
+<?php
+return array(
+	'modules' => array(
+		// ...
+		'BitDbBcryptAuthAdapter',
+	),
+	// ...
+);
+```
 
 Usage
 -----
@@ -32,30 +32,30 @@ Usage is very similar to Zend Framework 2 provided [Database Table Authenticatio
 
 When storing password in the database, use something like:
 
-	```php
-	use Zend\Crypt\Password\Bcrypt;
-    
-    $bcrypt = new Bcrypt();
-    $securePass = $bcrypt->create('user password');
-    ```
+```php
+use Zend\Crypt\Password\Bcrypt;
+
+$bcrypt = new Bcrypt();
+$securePass = $bcrypt->create('user password');
+```
 
 Then, to authenticate against it, use this module like:
 
-	```php
-	use BitDbBcryptAuthAdapter\AuthAdapter;
-    use Zend\Authentication\AuthenticationService;
-	
-	...
-	
-	$auth = new AuthenticationService();
-	
-	$authAdapter = new AuthAdapter($this->serviceLocator->get('Zend\Db\Adapter\Adapter'));
-	
-	$authAdapter->setTableName('user');
-	$authAdapter->setIdentityColumn('email');
-	$authAdapter->setCredentialColumn('password');
-	$authAdapter->setIdentity('user@bitspan.rs');
-	$authAdapter->setCredential('plaintext password');
-	
-	$result = $authAdapter->authenticate();
-	```
+```php
+use BitDbBcryptAuthAdapter\AuthAdapter;
+use Zend\Authentication\AuthenticationService;
+
+...
+
+$auth = new AuthenticationService();
+
+$authAdapter = new AuthAdapter($this->serviceLocator->get('Zend\Db\Adapter\Adapter'));
+
+$authAdapter->setTableName('user');
+$authAdapter->setIdentityColumn('email');
+$authAdapter->setCredentialColumn('password');
+$authAdapter->setIdentity('user@bitspan.rs');
+$authAdapter->setCredential('plaintext password');
+
+$result = $authAdapter->authenticate();
+```
