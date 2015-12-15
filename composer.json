@@ -1,6 +1,7 @@
 {
   "name": "velixir/bit-db-bcrypt-auth-adapter",
   "description": "Forked BitDbBcryptAuthAdapter from cabrilo/BitDbBcryptAuthAdapter to put create a composer package for it",
+  "license": "CUSTOM",
   "keywords": [
     "bcrypt",
     "zf2",
