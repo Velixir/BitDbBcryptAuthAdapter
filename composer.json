@@ -9,17 +9,25 @@
   ],
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git"
+      "type": "package",
+      "package": {
+        "name": "bit-db-bcrypt-auth-adapter",
+        "version": "1.0",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git",
+          "reference": "1.0"
+        },
+        "require": {
+          "composer/installers": "^1.0"
+        }
+      }
     }
   ],
-  "require": {
-    "composer/installers": "^1.0"
-  },
   "extra": {
     "installer-paths": {
       "BitDbBcryptAuthAdapater": [
-        "velixir/bit-db-bcrypt-auth-adapter"
+        "bit-db-bcrypt-auth-adapter"
       ]
     }
   }
