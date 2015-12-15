@@ -7,6 +7,9 @@
     "zf2",
     "authadapter"
   ],
+  "config": {
+    "vendor-dir": "vendor/BitDbBcryptAuthAdapter"
+  },
   "repositories":
   [
     {
