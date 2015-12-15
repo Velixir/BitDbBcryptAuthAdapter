@@ -21,9 +21,6 @@
       }
     }
   ],
-  "require": {
-    "velixir/bit-db-bcrypt-auth-adapter": "dev-master"
-  },
   "extra": {
     "installer-paths": {
       "BitDbBcryptAuthAdapater": [
