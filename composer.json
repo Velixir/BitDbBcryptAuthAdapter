@@ -11,6 +11,7 @@
   [
     {
       "type": "vcs",
+      "version": "1",
       "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git"
     }
   ]
