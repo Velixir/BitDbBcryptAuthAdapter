@@ -23,12 +23,5 @@
   },
   "require-dev": {
     "mnsami/composer-custom-directory-installer": "1.0.*"
-  },
-  "extra": {
-    "installer-paths": {
-      "vendor/BitDbBcryptAuthAdapter": [
-        "velixir/bit-db-bcrypt-auth-adapter"
-      ]
-    }
   }
 }

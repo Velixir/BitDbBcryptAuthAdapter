@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "989bee537cc7af19a27bc0ad276180e4",
-    "content-hash": "4d389e6fc965705bd4b081650d82d07b",
+    "hash": "b61ab9f4dee583a4f870248a50f370d0",
+    "content-hash": "d4ddce308c192a02bbf177e5572811e3",
     "packages": [
         {
             "name": "mnsami/composer-custom-directory-installer",
