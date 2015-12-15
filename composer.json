@@ -1,0 +1,16 @@
+{
+  "name": "Velixir/BitDbBcryptAuthAdapter",
+  "description": "Forked BitDbBcryptAuthAdapter from cabrilo/BitDbBcryptAuthAdapter to put create a composer package for it",
+  "keywords": [
+    "bcrypt",
+    "zf2",
+    "authadapter"
+  ],
+  "repositories":
+  [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git"
+    }
+  ]
+}
