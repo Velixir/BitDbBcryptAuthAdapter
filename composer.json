@@ -7,12 +7,28 @@
     "zf2",
     "authadapter"
   ],
-  "repositories":
-  [
+  "repositories": [
     {
-      "type": "vcs",
-      "version": "1",
-      "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git"
+      "type": "package",
+      "package": {
+        "name": "bit-db-bcrypt-auth-adapter",
+        "version": "1.0",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/Velixir/BitDbBcryptAuthAdapter.git",
+          "reference": "1.0"
+        }
+      }
     }
-  ]
+  ],
+  "require": {
+    "velixir/bit-db-bcrypt-auth-adapter": "dev-master"
+  },
+  "extra": {
+    "installer-paths": {
+      "BitDbBcryptAuthAdapater": [
+        "bit-db-bcrypt-auth-adapter"
+      ]
+    }
+  }
 }
